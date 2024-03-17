@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&family=Bungee+Spice&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inclusive+Sans:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100dvh;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: calc(100dvw - 30px);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: calc(99.8dvw - 30px);
+}
+
+.reverse {
+  display: flex;
+  flex-direction: column;
+  bottom: 100px;
+}
+
+header {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #dff4f6, #eff9e0);
+}
+header .headContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-size: 3rem;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+header h1 p {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: none;
+  font-family: "Inclusive Sans", sans-serif;
+}
+header .line {
+  height: 0;
+  width: 120%;
+  margin-bottom: 5px;
+  border: 1px solid #3df305;
+  border-radius: 5px;
+}
+header p {
+  font-family: "Inclusive Sans", sans-serif;
+}
+
+nav, nav .navContainer {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+nav .navContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #e6e6e6;
+}
+nav .navContainer #logo {
+  position: absolute;
+  width: auto;
+  height: 45px;
+  border-radius: 5px;
+  left: 5px;
+}
+nav .navContainer #hamburger {
+  position: absolute;
+  width: 25px;
+  height: auto;
+  border-radius: 5px;
+  right: 5px;
+}
+nav .navContainer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+nav .navContainer ul li {
+  position: relative;
+  list-style: none;
+}
+nav .navContainer ul li a {
+  text-decoration: none;
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+}
+nav .navContainer ul li a::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #6e6c6c;
+  left: 0;
+  transform: scale(0);
+  bottom: 0;
+  border-radius: 2px;
+  transition: 0.2s;
+}
+nav .navContainer ul li a:hover::after {
+  transform: scale(1);
+}
+
+main .containerInformation {
+  height: 100dvh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+main .containerInformation .divSkills {
+  height: auto;
+  width: fit-content;
+  padding: 10px;
+}
+main .containerInformation .divSkills article h2 {
+  font-family: "Anek Telugu", sans-serif;
+}
+main .containerInformation .divSkills article h5 {
+  font-family: "Anek Telugu", sans-serif;
+  font-size: small;
+}
+main .containerInformation .divSkills article ul {
+  list-style: none;
+}
+main .containerInformation .divSkills article ul li {
+  margin-bottom: 5px;
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 0.7rem;
+}
+main .containerInformation .floatingImg {
+  width: 200px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .containerInformation .floatingImg img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: auto;
+  width: 200px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+main .containerInformation .divInformation {
+  height: auto;
+  width: 25dvw;
+  padding: 5px;
+}
+main .containerInformation .divInformation h2 {
+  font-family: "Inclusive Sans", sans-serif;
+}
+main .containerInformation .divInformation .h {
+  margin-bottom: 5px;
+}
+main .containerInformation .divInformation article p {
+  font-family: "Anek Telugu", sans-serif;
+}
+main .containerInformation .divInformation article p::first-letter {
+  font-size: 1.5rem;
+}
+main .containerInformation #divLines {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  height: 50px;
+  width: 70dvw;
+  top: 100px;
+}
+main .containerInformation #divLines #lineOne {
+  position: relative;
+  height: 0;
+  z-index: -1;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 60dvw;
+}
+main .containerInformation #divLines #lineTwo {
+  position: relative;
+  height: 0;
+  z-index: -1;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 70dvw;
+}
+main .subMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+main .subMain .index1 {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+}
+main .subMain .index1 .todoContainer {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(45deg, #b9e1f1, #aff4f3);
+  border-radius: 5px;
+}
+main .subMain .index1 .todoContainer .todoApp {
+  width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0 15px;
+  cursor: default;
+}
+main .subMain .index1 .todoContainer .todoApp h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: large;
+}
+main .subMain .index1 .todoContainer .todoApp h2 img {
+  height: auto;
+  width: 35px;
+  margin-left: 10px;
+}
+main .subMain .index1 .todoContainer .todoRow {
+  width: 270px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e3e6e3;
+  border-radius: 10px;
+}
+main .subMain .index1 .todoContainer .todoRow #inputBox {
+  flex: 1;
+  border-radius: 10px;
+  border: none;
+  color: #474846;
+  padding: 0 5px 0;
+  height: 30px;
+  background: transparent;
+  outline: none;
+}
+main .subMain .index1 .todoContainer .todoRow button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 70px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #ff5945;
+  border: none;
+  padding: 0 5px 0;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  color: #f7fcf7;
+}
+main .subMain .index1 .todoContainer .todoRow button img {
+  width: 20px;
+  height: auto;
+}
+main .subMain .index1 .todoContainer #todoList {
+  display: block;
+  width: 270px;
+}
+main .subMain .index1 .todoContainer #todoList li {
+  position: relative;
+  list-style: none;
+  text-align: left;
+  padding: 2px 5px 2px 30px;
+  cursor: pointer;
+}
+main .subMain .index1 .todoContainer #todoList li span {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 0.8;
+  font-weight: 600;
+  cursor: pointer;
+}
+main .subMain .index1 .todoContainer #todoList li::before {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  content: "";
+  background-image: url(/lib/icons/radio.png);
+  background-position: center;
+  background-size: cover;
+  left: 10px;
+  top: 3px;
+}
+main .subMain .index1 .todoContainer #todoList .checked {
+  color: #969393;
+  text-decoration: line-through;
+}
+main .subMain .index1 .todoContainer #todoList li.checked::before {
+  background-image: url(/lib/icons/checked.png);
+}
+main .subMain .index1 .todoContainer #todoList #todoList li span:hover {
+  background: #8ef7a8;
+  color: #f80501;
+  border: none;
+  box-shadow: 2px 8px 20px #a09a99;
+}
+main .subMain .clockContainer {
+  border-radius: 5px;
+  position: relative;
+  height: 300px;
+  width: 500px;
+  background: linear-gradient(180deg, #c3e7dd, #e3c5ed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+main .subMain .clockContainer .clockWall {
+  position: relative;
+  height: 100px;
+  width: 200px;
+}
+main .subMain .clockContainer .clockWall .square {
+  position: absolute;
+  border-radius: 5px;
+  height: 100px;
+  width: 100px;
+  background-color: #f94e04;
+  left: -50px;
+  top: -50px;
+}
+main .subMain .clockContainer .clockWall .clock {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: rgba(132, 131, 131, 0.11);
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .subMain .clockContainer .clockWall .clock #amPm {
+  margin-left: 5px;
+}
+main .subMain .clockContainer .clockWall .circle {
+  position: absolute;
+  border-radius: 5px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #05fb42;
+  right: -50px;
+  bottom: -50px;
+}
+main .subMain .index2 {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+}
+main .subMain .index2 .container {
+  position: relative;
+  display: flex;
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+  border: 1px solid #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  left: 0;
+}
+main .subMain .index2 .container .static-txt {
+  color: #8c4242;
+  mix-blend-mode: darken;
+  font-size: 50px;
+  font-weight: 400;
+  height: 90px;
+}
+main .subMain .index2 .container .dyanmic-txts {
+  margin-left: 20px;
+  line-height: 60px;
+  padding: 0px;
+  height: 90px;
+  overflow: hidden;
+}
+main .subMain .index2 .dyanmic-txts li {
+  list-style: none;
+  color: #ff4c29;
+  font-size: 50px;
+  font-weight: 400;
+  position: relative;
+  animation: slide 12s steps(4) infinite;
+  animation-direction: normal;
+  height: 90px;
+  top: 0;
+}
+@keyframes slide {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-360px);
+  }
+}
+main .subMain .index2 .dyanmic-txts li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: #0a0a0a;
+  background-color: #ffffff;
+  animation: typing 3s steps(10) infinite, ease-in-out;
+}
+@keyframes typing {
+  40%, 60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0px;
+  }
+}
+main .subMain .squareCon {
+  border: 1px solid #3df305;
+  border-radius: 5px;
+  height: 300px;
+  width: 300px;
+}
+
+footer {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 15px;
+}
+footer .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+footer .wrapper .icon {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .wrapper .icon .tooltip {
+  position: absolute;
+  padding: 5px 5px 5px;
+  top: 0px;
+  line-height: 1.5;
+  font-size: 14px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .wrapper .icon .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #fdfafa;
+  bottom: -3.5px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .wrapper .icon span i {
+  font-size: 1.5rem;
+}
+footer .wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+footer .wrapper .facebook:hover,
+footer .wrapper .facebook:hover .tooltip,
+footer .wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+footer .wrapper .twitter:hover,
+footer .wrapper .twitter:hover .tooltip,
+footer .wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+footer .wrapper .instagram:hover,
+footer .wrapper .instagram:hover .tooltip,
+footer .wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+footer .wrapper .github:hover,
+footer .wrapper .github:hover .tooltip,
+footer .wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+footer .wrapper .youtube:hover,
+footer .wrapper .youtube:hover .tooltip,
+footer .wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}

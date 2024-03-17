@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Sky_Up Portfolio</title>
+  </head>
+  <body>
+    <div id="myHeader">
+      <header>
+        <div class="headContainer">
+          <h1>SKYUP<p>my Portfolio</p></h1>
+          <div class="line"></div>
+          <p>Web design by: George Turga Mendoza</p>
+        </div>
+      </header>
+      <nav>
+        <div class="navContainer">
+          <img id="logo" src="/lib/icons/SkyUp_logo.png" alt="Sky_Up"/>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a href="">Projects</a></li>
+          </ul>
+          <img id="hamburger" src="/lib/icons/menu.png" alt="Icons" />
+        </div>
+      </nav>
+    </div>
+    <main>
+      <div class="containerInformation" id="containerInformation">
+        <!-- //images -->
+        <div class="floatingImg">
+          <img src="/lib/profilePic/George01.jpg" alt="image">
+        </div>
+
+        <!-- //information -->
+        <div class="divInformation">
+          <h2 class="h">MENDOZA, GEORGE TURGA</h2>
+          <h6 class="h">SAN JOSE, OCCIDENTAL MINDORO</h6>
+          <h5 class="h">mendoza1105191@gmail.com</h5>
+          <h6 class="h">+639668410518</h6>
+            <!-- <p>SAN JOSE, OCCIDENTAL MINDORO</p>
+            <p>+639668410518</p>
+            <p>mendoza1105191@gmail.com</p> -->
+            <article>
+              <p>
+                I am looking for a challenging role in a reputable organization to
+                utilize my technical and programming skills for the organization's
+                growth and to enhance my knowledge about new and emerging trends
+                in the IT sector.
+              </p>
+            </article>
+          </div>
+        <!-- //skills -->
+        <div class="divSkills">
+          <article>
+            <h2>SKILLS</h2>
+            <h5>Front-End</h5>
+            <ul>
+              <li>HTML</li>
+              <li>CSS @ SASS</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+            <h5>Back-End</h5>
+            <ul>
+              <li>PHP</li>
+              <li>MYSQL</li>
+            </ul>
+            <h5>Others</h5>
+            <ul>
+              <li>Visual Basic</li>
+              <li>Java</li>
+              <li>C#</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- twolines -->
+        <div id="divLines">
+        <span id="lineOne"></span>
+        <span id="lineTwo"></span>
+        </div>
+      </div>
+
+      <!-- sub main -->
+      <div class="subMain">
+        <!-- todolist -->
+        <div class="index1">
+        <div class="todoContainer">
+          <div class="todoApp">
+            <h2>To-Do List <img src="/lib/icons/to-do-list.png" alt="icon" /></h2>
+          </div>
+          <div class="todoRow">
+            <input type="text" id="inputBox" placeholder="Add your list" />
+            <button id="addButton">Add<img src="/lib/icons/addWithColor.png" /></button>
+          </div>
+          <ul id="todoList">
+            <!-- <li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li> -->
+
+          </ul>
+        </div>
+
+        <!-- clock -->
+        <div class="clockContainer">
+            <div class="clockWall">
+              <div class="square"></div>
+              <div class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+                <span id="amPm">AM</span>
+              </div>
+              <div class="circle"></div>
+            </div>
+            <!-- <button type="button" id="btnFormat">12 hours format</button> -->
+        </div>
+      </div>
+      <div class="index2">
+        <div class="container">
+          <div class="static-txt">I'm</div>
+          <ul class="dyanmic-txts">
+              <li><span>Youtuber</span></li>
+              <li><span>Designer</span></li>
+              <li><span>Developer</span></li>
+              <li><span>Freelancer</span></li>
+          </ul>
+      </div>
+      <div class="squareCon"></div>
+      </div>
+    </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <a href="#" class="icon facebook">
+          <div class="tooltip">Facebook</div>
+         <span><i class="fa-brands fa-facebook"></i></span>
+        </a>
+        <a href="#" class="icon twitter">
+          <div class="tooltip">X_Twitter</div>
+          <span><i class="fa-brands fa-x-twitter"></i></span>
+        </a>
+        <a href="#" class="icon instagram">
+          <div class="tooltip">Instagram</div>
+          <span><i class="fa-brands fa-instagram"></i></span>
+        </a>
+        <a href="#" class="icon github">
+          <div class="tooltip">Github</div>
+          <span><i class="fa-brands fa-github"></i></span>
+        </a>
+        <a href="#" class="icon youtube">
+          <div class="tooltip">Youtube</div>
+          <span><i class="fa-brands fa-youtube"></i></i></span>
+        </a>
+      </div>
+    </footer>
+    <script src="/javascript/skyup.js"></script>
+    <script src="/javascript/todolist.js"></script>
+    <script src="/javascript/clock.js"></script>
+  </body>
+</html>
